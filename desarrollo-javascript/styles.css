@@ -1,0 +1,85 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+body > div:first-of-type {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+label[for="valueInput"] {
+    font-weight: bold;
+}
+
+input[type="number"] {
+    padding: 8px;
+    flex: 1;
+    border: 1px solid #ddd;
+}
+
+button {
+    padding: 8px 16px;
+    background: #abaeb1;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.stats {
+    margin: 20px 0;
+    border-top: 2px solid #8a8181;
+    padding-top: 15px;
+}
+
+.stats > div {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.stats label {
+    width: 80px;
+    text-align: left;
+    margin-right: 15px;
+}
+
+.stats input[type="text"] {
+    padding: 6px;
+    border: 1px solid #eee;
+    background: #f9f9f9;
+    width: 100px;
+}
+
+.actions {
+    position: relative;
+    margin-top: 30px;
+    padding-top: 20px;
+}
+
+.actions::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #8a8181;
+    display: block;
+}
+
+#reset {
+    background: #abaeb1;
+    padding: 10px;
+    margin-top: 15px;
+}
